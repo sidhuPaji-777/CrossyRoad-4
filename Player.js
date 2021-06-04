@@ -8,6 +8,11 @@ class Player{
         this.spt.shapeColor = "Yellow";
         this.spt.addAnimation("player", playerAnimation);
         this.spt.scale = 0.07;
+        // mam plz check this also_____________________________
+        if(gameState=="WIN")
+        {
+            this.spt.changeAnimation("player", playerWinner);
+        }
     }
 
     move(xdir, ydir)
